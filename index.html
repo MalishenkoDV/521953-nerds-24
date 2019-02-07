@@ -2,11 +2,132 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/roboto-medium.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/roboto-regular.woff" type="font/woff" rel="preload">
+    <link href="fonts/roboto-medium.woff" type="font/woff" rel="preload">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="header">
+      <a href="index.html"><img src="img/nerds-logo.png" alt="Nerds Logo"></a>
+      <nav class="nav">
+        <ul class="nav__cite">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="nav__cart">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__slider">
+        <div class="main__slider--1">
+          <article class="">
+            Долго, дорого, скрупулезно.
+          </article>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div class="main__slider--2">
+          <article class="">
+            Любим математику как никто другой.
+          </article>
+          <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div class="main__slider--3">
+          <article class="">
+              Только ночь, только хардкор
+          </article>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#">Узнать больше</a>
+        </div>
+      </section>
+      <section>
+        <article>
+          <img src="img/illustration-1.png" alt="Уникальный дизайн!!!!" width="300" height="146">
+          <h5>Веб-сайты</h5>
+          <p>Мир никогда не будет прежним после того, как увидит ваш сайт.</p>
+          <button type="button" name="button">Заказать</button>
+        </article>
+        <article>
+          <img src="img/illustration-2.png" alt="Уникальный приложение!!!!" width="300" height="146">
+          <h5>Приложения</h5>
+          <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+          <button type="button" name="button">Заказать</button>
+        </article>
+        <article>
+          <img src="img/illustration-3.png" alt="Уникальный презентация!!!!" width="300" height="146">
+          <h5>Презентации</h5>
+          <p>Вы даже не подозреваете на сколько вы изумительны!</p>
+          <button type="button" name="button">Заказать</button>
+        </article>
+      </section>
+      <hr>
+      <section>
+        <div class="">
+          <h2>Мы маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принцыпы минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h5>Выполняем заказы на разработку:</h5>
+            <ul>
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для  и </li>
+              <li>Слайдшоу и видео для корпоративныхпрезентаций</li>
+            </ul>
+        </div>
+        <section class="">
+          <img src="#" alt="#">
+          <h6>С 2004 года любми точность во всем:</h6>
+          <table>
+            <tr>
+              <th>146%</th>
+              <th>100%</th>
+              <th>50%</th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h5>Our projects:</h5>
+        <ul>
+          <li><a href="#"><img src="img/logo-1.png" alt="HTML Academy" width="199" height="68"></a></li>
+          <li><a href="#"><img src="img/logo-2.png" alt="Барбершоп 'Бородинский'" width="199" height="68"></a></li>
+          <li><a href="#"><img src="img/logo-3.png" alt="Project PINK" width="199" height="68"></a></li>
+          <li><a href="#"><img src="img/logo-4.png" alt="Mishka" width="199" height="68"></a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section class="map">
+        <div class="footer-address">
+          <h6>Nёrds Design Studio</h6>
+          <p>191186, Санкт-Петербург, ул Б. Конюшенная, д, 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button type="button" name="button">Напишите нам</button>
+        </div>
+        <img src="img/bg_map.png" alt="map" width="1440" height="416">
+      </section>
+      <ul class="footer__social">
+        <li><a href="#"><img src="#" alt="Vkontakte"></a></li>
+        <li><a href="#"><img src="#" alt="Facebook"></a></li>
+        <li><a href="#"><img src="#" alt="Instagram"></a></li>
+      </ul>
+      <div class="footer__be-friends">
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для доузей из социальных сетей.</p>
+      </div>
+    </footer>
   </body>
 </html>
