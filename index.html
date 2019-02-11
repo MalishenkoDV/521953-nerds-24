@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/roboto-medium.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/roboto-regular.woff" type="font/woff" rel="preload">
@@ -28,54 +29,56 @@
     </header>
     <main class="main">
       <section class="main__slider">
+        <h3 class="visual-hidden">Перечислим-ка наши принцыпы:</h3>
         <div class="main__slider--1">
           <article class="">
-            Долго, дорого, скрупулезно.
+            <H2>Долго, дорого, скрупулезно.</H2>
           </article>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a href="#">Узнать больше</a>
         </div>
         <div class="main__slider--2">
           <article class="">
-            Любим математику как никто другой.
+            <h2>Любим математику как никто другой.</h2>
           </article>
           <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
           <a href="#">Узнать больше</a>
         </div>
         <div class="main__slider--3">
           <article class="">
-              Только ночь, только хардкор
+              <h2>Только ночь, только хардкор</h2>
           </article>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a href="#">Узнать больше</a>
         </div>
       </section>
       <section>
+        <h2 class="visual-hidden">Что мы вообще делаем:</h2>
         <article>
           <img src="img/illustration-1.png" alt="Уникальный дизайн!!!!" width="300" height="146">
-          <h5>Веб-сайты</h5>
+          <h4>Веб-сайты</h4>
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт.</p>
-          <button type="button" name="button">Заказать</button>
+          <a href="#">Заказать</a>
         </article>
         <article>
           <img src="img/illustration-2.png" alt="Уникальный приложение!!!!" width="300" height="146">
-          <h5>Приложения</h5>
+          <h4>Приложения</h4>
           <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-          <button type="button" name="button">Заказать</button>
+          <a href="#">Заказать</a>
         </article>
         <article>
           <img src="img/illustration-3.png" alt="Уникальный презентация!!!!" width="300" height="146">
-          <h5>Презентации</h5>
+          <h4>Презентации</h4>
           <p>Вы даже не подозреваете на сколько вы изумительны!</p>
-          <button type="button" name="button">Заказать</button>
+          <a href="#">Заказать</a>
         </article>
       </section>
       <hr>
       <section>
         <div class="">
-          <h2>Мы маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <h3>Мы маленькая, но гордая дизайн-студия из Краснодара.</h3>
           <p>Исповедуем принцыпы минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <h5>Выполняем заказы на разработку:</h5>
+            <h6>Выполняем заказы на разработку:</h6>
             <ul>
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для  и </li>
@@ -83,7 +86,7 @@
             </ul>
         </div>
         <section class="">
-          <img src="#" alt="#">
+          <img src="img/nerds-illustration.png" alt="Логотип Нёрдс №2">
           <h6>С 2004 года любми точность во всем:</h6>
           <table>
             <tr>
@@ -110,12 +113,13 @@
       </section>
     </main>
     <footer>
+      <h2 class="visual-hidden">Подвал сайта: где мы и как с нами связаться</h2>
       <section class="map">
         <div class="footer-address">
           <h6>Nёrds Design Studio</h6>
           <p>191186, Санкт-Петербург, ул Б. Конюшенная, д, 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <button type="button" name="button">Напишите нам</button>
+          <a class="btn" href="#">Напишите нам</a>
         </div>
         <img src="img/bg_map.png" alt="map" width="1440" height="416">
       </section>
