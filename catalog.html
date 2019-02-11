@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/roboto-medium.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/roboto-regular.woff" type="font/woff" rel="preload">
@@ -28,7 +29,7 @@
       </header>
     <main class="catalog">
       <h1>Магазин готовых шаблонов</h1>
-      <form class="" action="index.html" method="post">
+      <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <h6>Стоимость:</h6>
           <input type="range" name="1" value="1">
@@ -40,14 +41,14 @@
           <label for="grid-type_resin"><input id="grid-type_resin" type="radio" name="grid-type" value="">Резиновая</label>
         </fieldset>
         <fieldset>
-          <h6>Особенности:</h6>
+          <h5>Особенности:</h5>
           <label for="feature_slider"><input id="feature_slider" type="checkbox" name="4" value="">Слайдер</label>
           <label for="feature_prohib"><input id="feature_prohib" type="checkbox" name="feaature_prohib" value="">Блок преимуществ</label>
           <label for="feature-news"><input id="feature-news" type="checkbox" name="feature-news" value="">Новости</label>
           <label for="feature_galery"><input id="feature_galery" type="checkbox" name="feature_galery" value="">Галерея</label>
           <label for="feature_cart"><input id="feature_cart" type="checkbox" name="feature_cart" value="">Корзина</label>
         </fieldset>
-        <button type="button" name="button">Показать</button>
+        <button type="submit" name="showSort">Показать</button>
       </form>
       <section>
         <div class="catalog--sorting">
@@ -69,9 +70,9 @@
             </svg>
             <a href="#"><img src="img/img-sedona.jpg" alt="предпросмотр сайта Седоны" width="360" height="576"></a>
             <div class="catalog--item__info">
-              <p>Sedona</p>
+              <h5>Sedona</h5>
               <p>Информационный сайт для туристов</p>
-              <button type="button">9 900 руб.</button>
+              <a href="#">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog--items">
@@ -80,9 +81,9 @@
             </svg>
             <a href="#"><img src="img/img-pink.jpg" alt="предпросмотр приложения Пинк" width="360" height="576"></a>
             <div class="catalog--item__info">
-              <p>PINK APP</p>
+              <h5>PINK APP</h5>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button type="button">9 900 руб.</button>
+              <a href="#">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog--items">
@@ -91,9 +92,9 @@
             </svg>
             <a href="#"><img src="img/img-barbershop.jpg" alt="Истинно мужская брадобрейня" width="360" height="576"></a>
             <div class="catalog--item__info">
-              <p>Barbershop</p>
+              <h5>Barbershop</h5>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <button type="button">9 900 руб.</button>
+              <a href="#">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog--items">
@@ -102,9 +103,9 @@
             </svg>
             <a href="#"><img src="img/img-mishka.jpg" alt="предпросмотр сайта мягких игрушек" width="360" height="576"></a>
             <div class="catalog--item__info">
-              <p>MISHKA</p>
+              <h5>MISHKA</h5>
               <p>Интернет-магазин вязаных игрушек</p>
-              <button type="button">9 900 руб.</button>
+              <a href="#">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog--items">
@@ -113,9 +114,9 @@
             </svg>
             <a href="#"><img src="img/img-aplus.jpg" alt="предпросмотр сайта повышения квалификации" width="360" height="576"></a>
             <div class="catalog--item__info">
-              <p>A PLUS</p>
+              <h5>A PLUS</h5>
               <p>Лендинг курсов повышения квалификации</p>
-              <button type="button">9 900 руб.</button>
+              <a href="#">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog--items">
@@ -124,9 +125,9 @@
             </svg>
             <a href="#"><img src="img/img-kvast.jpg" alt="предпросмотр сайта настоящего кваса" width="360" height="576"></a>
             <div class="catalog--item__info">
-              <p>КВАСТ</p>
+              <h5>КВАСТ</h5>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <button type="button">9 900 руб.</button>
+              <a href="#">9 900 руб.</a>
             </div>
           </div>
         </section>
@@ -144,7 +145,7 @@
           <h6>Nerds Design Studio</h6>
           <p>191186, Санкт-Петербург, ул Б. Конюшенная, д, 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <button type="button" name="button">Напишите нам</button>
+          <button type="submit" name="writeUs">Напишите нам</button>
         </div>
         <img src="img/bg_map.png" alt="map" width="1440" height="416">
       </div>
