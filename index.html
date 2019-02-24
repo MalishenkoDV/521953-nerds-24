@@ -29,42 +29,42 @@
     </header>
     <main class="main">
       <section class="slider">
-        <h3 class="visual-hidden">Перечислим-ка наши принцыпы:</h3>
+        <h3 class="visually-hidden">Перечислим-ка наши принцыпы:</h3>
         <article class="slider__slide">
           <h2>Долго, дорого, скрупулезно.</h2>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#">Узнать больше</a>
+          <a class="btn" href="#">Узнать больше</a>
         </article>
         <article class="slider__slide">
           <h2>Любим математику как никто другой.</h2>
           <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-          <a href="#">Узнать больше</a>
+          <a class="btn" href="#">Узнать больше</a>
         </article>
         <article class="slider__slide">
           <h2>Только ночь, только хардкор</h2>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#">Узнать больше</a>
+          <a class="btn" href="#">Узнать больше</a>
         </article>
       </section>
-      <section>
-        <h2 class="visual-hidden">Что мы вообще делаем:</h2>
-        <article>
+      <section class="we-do">
+        <h2 class="visually-hidden">Что мы вообще делаем:</h2>
+        <article class="we-do__what">
           <img src="img/illustration-1.png" alt="Уникальный дизайн!!!!" width="300" height="146">
           <h4>Веб-сайты</h4>
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт.</p>
-          <a href="#">Заказать</a>
+          <a class="btn" href="#">Заказать</a>
         </article>
-        <article>
+        <article class="we-do__what">
           <img src="img/illustration-2.png" alt="Уникальный приложение!!!!" width="300" height="146">
           <h4>Приложения</h4>
           <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-          <a href="#">Заказать</a>
+          <a class="btn" href="#">Заказать</a>
         </article>
-        <article>
+        <article class="we-do__what">
           <img src="img/illustration-3.png" alt="Уникальный презентация!!!!" width="300" height="146">
           <h4>Презентации</h4>
-          <p>Вы даже не подозреваете на сколько вы изумительны!</p>
-          <a href="#">Заказать</a>
+          <p>Вы даже не подозреваете насколько вы изумительны!</p>
+          <a class="btn" href="#">Заказать</a>
         </article>
       </section>
       <hr>
@@ -96,6 +96,7 @@
           </table>
         </section>
       </section>
+      <!--
       <section class="portfolio">
         <h5>Our projects:</h5>
         <span><a href="#"><img src="img/logo-1.png" alt="HTML Academy" width="199" height="68"></a></span>
@@ -104,9 +105,18 @@
         <span><a href="#"><img src="img/logo-4.png" alt="Mishka" width="199" height="68"></a>
         </span>
       </section>
+
+      -->
+      <section class="portfolio">
+        <!--<h5 class="visually-hidden">Our projects:</h5>-->
+        <a class="portfolio--htmla" href="#"></a>
+        <a class="portfolio--barber" href="#"></a>
+        <a class="portfolio--pink" href="#"></a>
+        <a class="portfolio--mishka" href="#"></a>
+      </section>
     </main>
     <footer class="footer">
-      <h2 class="visual-hidden">Подвал сайта: где мы и как с нами связаться</h2>
+      <h2 class="visually-hidden">Подвал сайта: где мы и как с нами связаться</h2>
       <section class="footer__map">
         <div class="footer__address">
           <h6>Nёrds Design Studio</h6>
@@ -126,5 +136,22 @@
         <span>Скидка 10% для друзей из социальных сетей.</span>
       </div>
     </footer>
+
+    <div class="popup write-us">
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="in-popup-form">Ваше имя:
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label class="in-popup-form">Ваш e-mail:
+          <input type="email" name="email" placeholder="Для отправки ответа">
+        </label>
+        <label>Текст письма:
+          <textarea name="emailtext" rows="3" cols="40" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="btn" type="submit" name="write-us">Отправить</button>
+      </form>
+      <button class="btn-close" type="button" name="close">Close</button>
+    </div>
+
   </body>
 </html>
