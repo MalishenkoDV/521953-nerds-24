@@ -13,39 +13,54 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header class="header">
-      <img src="img/nerds-logo.svg" alt="Nerds Logo">
-      <nav class="nav">
-        <ul class="nav__header nav__site">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="nav__header nav__cart">
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
+    <div class="wrapper">
+      <header class="header">
+        <img src="img/nerds-logo.svg" alt="Nerds Logo">
+        <nav class="nav">
+          <ul class="nav__header nav__site">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="nav__header nav__cart">
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="wrapper">
       <section class="slider">
         <h3 class="visually-hidden">Перечислим-ка наши принцыпы:</h3>
         <article class="slider__slide">
-          <h2>Долго, дорого, скрупулезно.</h2>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="btn" href="#">Узнать больше</a>
+          <div>
+            <h2>Долго, дорого, скрупулезно.</h2>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <img src="img/slide1.png" alt="slide1" width="698" height="413">
         </article>
         <article class="slider__slide">
-          <h2>Любим математику как никто другой.</h2>
-          <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-          <a class="btn" href="#">Узнать больше</a>
+          <div>
+            <h2>Любим математику как никто другой.</h2>
+            <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <img src="img/slide2.png" alt="slide2" width="663" height="430">
         </article>
         <article class="slider__slide">
-          <h2>Только ночь, только хардкор</h2>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="btn" href="#">Узнать больше</a>
+          <div>
+            <h2>Только ночь, только хардкор</h2>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <img src="img/slide3.png" alt="slide3" width="759" height="411">
         </article>
       </section>
+    </div>
+
+    <main class="main">
       <section class="we-do">
         <h2 class="visually-hidden">Что мы вообще делаем:</h2>
         <article class="we-do__what">
@@ -68,16 +83,18 @@
         </article>
       </section>
       <hr>
-      <section>
-        <article class="">
+      <section class="about-us">
+        <article class="about-us about-us__details">
           <h3>Мы маленькая, но гордая дизайн-студия из Краснодара.</h3>
           <p>Исповедуем принцыпы минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <h6>Выполняем заказы на разработку:</h6>
+            <div>
+              <h6>Выполняем заказы на разработку:</h6>
             <ul>
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для  и </li>
               <li>Слайдшоу и видео для корпоративныхпрезентаций</li>
             </ul>
+          </div>
         </article>
         <section class="">
           <img src="img/nerds-illustration.png" alt="Логотип Нёрдс №2">
@@ -97,7 +114,6 @@
         </section>
       </section>
       <!--
-      <section class="portfolio">
         <h5>Our projects:</h5>
         <span><a href="#"><img src="img/logo-1.png" alt="HTML Academy" width="199" height="68"></a></span>
         <span><a href="#"><img src="img/logo-2.png" alt="Барбершоп 'Бородинский'" width="199" height="68"></a></span>
