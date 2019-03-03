@@ -1,65 +1,33 @@
 /* Шрифты */
-/* roboto-300 - cyrillic_latin */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Roboto Light'), local('Roboto-Light'),
-       url('../fonts/roboto-v18-cyrillic_latin-300.woff2') format('woff2'),
-       url('../fonts/roboto-v18-cyrillic_latin-300.woff') format('woff');
-}
-/* roboto-300italic - cyrillic_latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
-       url('../fonts/roboto-v18-cyrillic_latin-300italic.woff2') format('woff2'),
-       url('../fonts/roboto-v18-cyrillic_latin-300italic.woff') format('woff');
-}
-/* roboto-regular - cyrillic_latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v18-cyrillic_latin-regular.woff2') format('woff2'),
-       url('../fonts/roboto-v18-cyrillic_latin-regular.woff') format('woff');
-}
-/* roboto-italic - cyrillic_latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Roboto Italic'), local('Roboto-Italic'),
-       url('../fonts/roboto-v18-cyrillic_latin-italic.woff2') format('woff2'),
-       url('../fonts/roboto-v18-cyrillic_latin-italic.woff') format('woff');
-}
-/* roboto-900 - cyrillic_latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
+  font-family: 'robotoregular';
   src: local('Roboto Black'), local('Roboto-Black'),
-       url('../fonts/roboto-v18-cyrillic_latin-900.woff2') format('woff2'),
-       url('../fonts/roboto-v18-cyrillic_latin-900.woff') format('woff');
+  src: url('roboto-regular-webfont.woff2') format('woff2'),
+       url('roboto-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-/* roboto-900italic - cyrillic_latin */
 @font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 900;
-  src: local('Roboto Black Italic'), local('Roboto-BlackItalic'),
-       url('../fonts/roboto-v18-cyrillic_latin-900italic.woff2') format('woff2'),
-       url('../fonts/roboto-v18-cyrillic_latin-900italic.woff') format('woff');
+  font-family: 'robotomedium';
+  src: local('Roboto Black'), local('Roboto-Black'),
+  src: url('roboto-medium-webfont.woff2') format('woff2'),
+       url('roboto-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: local('Roboto Black'), local('Roboto-Black'),
+  src: url('roboto-bold-webfont.woff2') format('woff2'),
+       url('roboto-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Глобальные теги */
-
 * {
   outline: 1px solid red;
 }
@@ -220,7 +188,7 @@ h5 {
 /* страницы слайда */
 .slider__slide {
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 0;
   // box-sizing: border-box;
   // display: flex;
 }
@@ -237,16 +205,16 @@ h5 {
   line-height: 55px;
   font-weight: 500;
 }
-#product-1:checked ~ .slider__slide:nth-child(1) {
+#product-1:checked ~ .slider__slide.slider__slide--1 {
   display: flex;
 }
 
-#product-2:checked ~ .slider__slide:nth-child(2) {
-  display: block;
+#product-2:checked ~ .slider__slide.slider__slide--2 {
+  display: flex;
 }
 
-#product-3:checked ~ .slider__slide:nth-child(3) {
-  display: block;
+#product-3:checked ~ .slider__slide.slider__slide--3 {
+  display: flex;
 }
 #product-1:checked ~ .slider-controls .slider-controls-item--1::before,
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before,
@@ -287,15 +255,14 @@ h5 {
   width: 100%;
   border: none;
   background-color: #eee;
-  margin: 80px 20px;
+  margin: 0px 20px;
 }
 /* Что мы дклаем */
 
 .we-do {
   display: flex;
   justify-content: space-between;
-  margin: 0px;
-  margin-top: 80px;
+  margin: 80px 0px;
 }
 
 .we-do__what {
@@ -307,19 +274,20 @@ h5 {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
+  margin: 20px 0;
 }
 .we-do__what p {
   padding-right: 40px;
-  margin: 10px 1px;
+  margin-bottom: 30px;
 }
 
 /* About us */
 .about-us {
-  margin: 40px 20px;
+  margin: 41px 20px 32px 20px;
   display: flex;
+  justify-content: space-between;
 }
 .about-us__details {
-  width: 70%;
   margin-right: 140px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -333,14 +301,45 @@ h5 {
 .about-us__details p {
   padding-right: 30px;
 }
-.about-us__details h6{
+.about-us h6{
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
+}
+.about-us__details ul {
+  list-style: none;
+  margin-left: -4px;
+  margin-top: -15px;
+}
+.about-us__details li {
+  padding-bottom: 23px;
+}
+.about-us__details li::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background-color: #ff6666;
+  top: -13px;
+  left: -35px;
 }
 .about-us__dedication {
-  width: 400px;
-  padding: 0 20px;
+  flex-shrink: 0;
+  width: 360px;
+}
+.about-us__dedication h6 {
+  text-align: center;
+  margin-top: 28px;
+}
+.about-us__dedication th {
+  font-size: 45px;
+  font-weight: 700;
+  padding: 12px 0;
+}
+.about-us__dedication td {
+  padding: 13px 5px;
+  line-height: 21px;
 }
 /* Buttons */
 .btn {
@@ -370,7 +369,6 @@ h5 {
 .btn__app {
   background-color: #00cc66;
 }
-
 .btn__pres {
   background-color: #ffcc33;
 }
@@ -383,39 +381,47 @@ h5 {
   width: 100%;
   height: 180px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 5px;
 }
-.portfolio__list li {
-  display: inline-block;
-}
-.portfolio--htmla, .portfolio--barber, .portfolio--pink, .portfolio--mishka {
+
+.portfolio--htmla,
+.portfolio--barber,
+.portfolio--pink,
+.portfolio--mishka {
   width: 199px;
   height: 68px;
   opacity: 0.2;
 }
 .portfolio--htmla {
-  background: url(../img/logo-1.png)  no-repeat center;
+  background: url(../img/logo-1.png) no-repeat center;
 }
 .portfolio--barber {
-  background: url(../img/logo-2.png)  no-repeat center;
+  background: url(../img/logo-2.png) no-repeat center;
   width: 199px;
   height: 90px;
 }
 .portfolio--pink {
-  background: url(../img/logo-3.png)  no-repeat center;
+  background: url(../img/logo-3.png) no-repeat center;
   width: 185px;
   height: 52px;
 }
 .portfolio--mishka {
-  background: url(../img/logo-4.png)  no-repeat center;
+  background: url(../img/logo-4.png) no-repeat center;
   width: 173px;
   height: 84px;
 }
-.portfolio--htmla:hover, .portfolio--barber:hover, .portfolio--pink:hover, .portfolio--mishka:hover {
+.portfolio--htmla:hover,
+.portfolio--barber:hover,
+.portfolio--pink:hover,
+.portfolio--mishka:hover {
   opacity: 1;
 }
-.portfolio--htmla:active, .portfolio--barber:active, .portfolio--pink:active, .portfolio--mishka:active {
+.portfolio--htmla:active,
+.portfolio--barber:active,
+.portfolio--pink:active,
+.portfolio--mishka:active {
   opacity: 0.1;
 }
 
