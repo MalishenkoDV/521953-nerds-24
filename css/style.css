@@ -97,19 +97,11 @@ h2 {
   font-weight: 400;
 }
 
-
-h4 {
-  font-size: 24px;
-  font-weight: 400;
-}
 h5 {
   font-size: 18px;
   font-weight: 400;
 }
-h6 {
-  font-size: 16px;
-  font-weight: 400;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -287,7 +279,6 @@ h6 {
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 /* Horizontal row */
@@ -296,7 +287,7 @@ h6 {
   width: 100%;
   border: none;
   background-color: #eee;
-  margin: 80px 0;
+  margin: 80px 20px;
 }
 /* Что мы дклаем */
 
@@ -304,44 +295,53 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin: 0px;
-  margin-top: 80px 20px;
+  margin-top: 80px;
 }
 
 .we-do__what {
+  margin-left: 20px;
   width: 33%;
   padding-right: 87px;
 }
 .we-do__what h4 {
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .we-do__what p {
-  padding-right: 50px;
+  padding-right: 40px;
   margin: 10px 1px;
 }
-.we-do__what .btn {
-  width: 160px;
-  box-sizing: border-box;
-  padding: 13px;
-}
-.we-do__what .btn:nth-child(2) {
-  background-color: #00cc66;
-}
 
-.we-do__what .btn:nth-child(3) {
-  background-color: #ffcc33;
-}
 /* About us */
 .about-us {
+  margin: 40px 20px;
   display: flex;
 }
 .about-us__details {
   width: 70%;
+  margin-right: 140px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.about-us__details h3 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1;
+  margin: 34px 0;
+}
+.about-us__details p {
+  padding-right: 30px;
+}
+.about-us__details h6{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-us__dedication {
+  width: 400px;
+  padding: 0 20px;
+}
 /* Buttons */
 .btn {
   display: block;
@@ -362,6 +362,19 @@ h6 {
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
+.we-do__what .btn {
+  width: 160px;
+  box-sizing: border-box;
+  padding: 13px;
+}
+.btn__app {
+  background-color: #00cc66;
+}
+
+.btn__pres {
+  background-color: #ffcc33;
+}
+
 
 
 /* Портфолио */
