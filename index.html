@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="mask-icon" href="img/htmlcss-touch-icon.png">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font">
@@ -15,7 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header container">
         <img src="img/nerds-logo.svg" alt="Nerds Logo">
         <nav class="nav">
           <ul class="nav__header nav__site">
@@ -32,32 +31,44 @@
     </div>
 
     <div class="wrapper">
-      <section class="slider">
-        <h3 class="visually-hidden">Перечислим-ка наши принцыпы:</h3>
+      <section class="slider container">
+        <h2 class="visually-hidden">Перечислим-ка наши принцыпы:</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+
         <article class="slider__slide">
           <div>
-            <h2>Долго, дорого, скрупулезно.</h2>
+            <h3>Долго, дорого, скрупулезно.</h3>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
           <img src="img/slide1.png" alt="slide1" width="698" height="413">
         </article>
+
         <article class="slider__slide">
           <div>
-            <h2>Любим математику как никто другой.</h2>
+            <h3>Любим математику как никто другой.</h3>
             <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
           <img src="img/slide2.png" alt="slide2" width="663" height="430">
         </article>
+
         <article class="slider__slide">
           <div>
-            <h2>Только ночь, только хардкор</h2>
+            <h3>Только ночь, только хардкор</h3>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
           <img src="img/slide3.png" alt="slide3" width="759" height="411">
         </article>
+
       </section>
     </div>
 
@@ -125,35 +136,39 @@
 
       -->
       <section class="portfolio">
-        <!--<h5 class="visually-hidden">Our projects:</h5>-->
+        <h5 class="visually-hidden">Our projects:</h5>
         <a class="portfolio--htmla" href="#"></a>
         <a class="portfolio--barber" href="#"></a>
         <a class="portfolio--pink" href="#"></a>
         <a class="portfolio--mishka" href="#"></a>
       </section>
     </main>
-    <footer class="footer">
-      <h2 class="visually-hidden">Подвал сайта: где мы и как с нами связаться</h2>
-      <section class="footer__map">
-        <div class="footer__address">
-          <h6>Nёrds Design Studio</h6>
-          <p>191186, Санкт-Петербург, ул Б. Конюшенная, д, 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="https://htmlacademy.ru/contacts">Напишите нам</a>
+    <div class="wrapper">
+      <footer class="footer container">
+        <h2 class="visually-hidden">Подвал сайта: где мы и как с нами связаться</h2>
+        <section class="footer__map">
+          <div class="wrapper contacts-container">
+          <div class="footer__address">
+            <h6>Nёrds Design Studio</h6>
+            <p>191186, Санкт-Петербург,</p>
+            <p>ул Б. Конюшенная, д, 19/8</p>
+            <a>тел. +7 (812) 275-75-75</a>
+            <a class="btn" href="https://htmlacademy.ru/contacts">Напишите нам</a>
+          </div>
+          </div>
+          <img src="img/bg_map.png" alt="map" width="1440" height="416">
+        </section>
+        <ul class="footer__social">
+          <li><a href="https://vk.com/htmlacademy" target="_blank" aria-label="Наша страница вконтакте"><img src="img/vk-icon.svg" alt="Vkontakte"></a></li>
+          <li><a href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Наша страница в фейсбуке"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наша страница в инстаграмме"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
+        </ul>
+        <div class="footer__slogan">
+          <span>Давайте дружить, это выгодно!</span>
+          <span>Скидка 10% для друзей из социальных сетей.</span>
         </div>
-        <img src="img/bg_map.png" alt="map" width="1440" height="416">
-      </section>
-      <ul class="footer__social">
-        <li><a href="https://vk.com/htmlacademy" target="_blank"><img src="img/vk-icon.svg" alt="Vkontakte"></a></li>
-        <li><a href="https://www.facebook.com/htmlacademy" target="_blank"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-        <li><a href="https://www.instagram.com/htmlacademy/" target="_blank"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
-      </ul>
-      <div class="footer__slogan">
-        <span>Давайте дружить, это выгодно!</span>
-        <span>Скидка 10% для друзей из социальных сетей.</span>
-      </div>
-    </footer>
-
+      </footer>
+    </div>
     <div class="popup write-us">
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="in-popup-form">Ваше имя:
