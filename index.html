@@ -5,9 +5,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/roboto-medium.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/robotomedium.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/robotobold.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/roboto-regular.woff" type="font/woff" rel="preload">
-    <link href="fonts/roboto-medium.woff" type="font/woff" rel="preload">
+    <link href="fonts/robotomedium.woff" type="font/woff" rel="preload">
+    <link href="fonts/robotobold.woff" type="font/woff" rel="preload">
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <title>HTML Academy: Нёрдс</title>
@@ -136,34 +138,38 @@
         <a class="portfolio--mishka" href="#"></a>
       </section>
       <hr>
-    </main>
-    <div class="wrapper">
-      <footer class="footer container">
-        <h2 class="visually-hidden">Подвал сайта: где мы и как с нами связаться</h2>
+      <div class="wrapper">
         <section class="footer__map">
           <div class="wrapper contacts-container">
-          <div class="footer__address">
-            <h6>Nёrds Design Studio</h6>
-            <p>191186, Санкт-Петербург,</p>
-            <p>ул Б. Конюшенная, д, 19/8</p>
-            <a>тел. +7 (812) 275-75-75</a>
-            <a class="btn" href="https://htmlacademy.ru/contacts">Напишите нам</a>
-          </div>
+            <div class="footer__address">
+              <h6>Nёrds Design Studio</h6>
+              <p>191186, Санкт-Петербург,</p>
+              <p>ул Б. Конюшенная, д, 19/8</p>
+              <a>тел. +7 (812) 275-75-75</a>
+              <a class="btn" href="https://htmlacademy.ru/contacts">Напишите нам</a>
+            </div>
           </div>
           <img src="img/bg_map.png" alt="map" width="1440" height="416">
         </section>
-        <ul class="footer__social">
-          <li><a href="https://vk.com/htmlacademy" target="_blank" aria-label="Наша страница вконтакте"><img src="img/vk-icon.svg" alt="Vkontakte"></a></li>
-          <li><a href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Наша страница в фейсбуке"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-          <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наша страница в инстаграмме"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
-        </ul>
-        <div class="footer__slogan">
-          <span>Давайте дружить, это выгодно!</span>
-          <span>Скидка 10% для друзей из социальных сетей.</span>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <h2 class="visually-hidden">Подвал сайта: где мы и как с нами связаться</h2>
+
+      <ul class="footer__social">
+        <li><a href="https://vk.com/htmlacademy" target="_blank" aria-label="Наша страница вконтакте"><img src="img/vk-icon.svg" alt="Vkontakte"></a></li>
+        <li><a href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Наша страница в фейсбуке"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наша страница в инстаграмме"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
+      </ul>
+      <div class="footer__slogan">
+        <span>Давайте дружить, это выгодно!</span>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+    </footer>
+
     <div class="popup write-us">
+      <h3>Напишите нам</h3>
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="in-popup-form">Ваше имя:
           <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
@@ -171,12 +177,12 @@
         <label class="in-popup-form">Ваш e-mail:
           <input type="email" name="email" placeholder="Для отправки ответа">
         </label>
-        <label>Текст письма:
+        <label class="in-popup_text">Текст письма:
           <textarea name="emailtext" rows="3" cols="40" placeholder="В свободной форме"></textarea>
         </label>
         <button class="btn" type="submit" name="write-us">Отправить</button>
       </form>
-      <button class="btn-close" type="button" name="close">Close</button>
+      <button class="btn-close" type="button" name="close">Закрыть</button>
     </div>
 
   </body>
