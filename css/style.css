@@ -53,6 +53,7 @@ a {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -664,18 +665,18 @@ h5 {
 
 .catalog__items {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .catalog__item {
   width: 360px;
   border: 2px solid  #c1c1c1;
-  margin: 35px 20px;
+  margin: 35px 0;
 }
 
 .catalog__elements {
-  display: flex;
+  width: 780px;
 }
 .catalog__item--info h5 {
   font-size: 36px;
