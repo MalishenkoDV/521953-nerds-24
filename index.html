@@ -2,14 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/robotomedium.woff2" type="font/woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/robotobold.woff2" type="font/woff2" rel="preload" as="font" crossorigin="anonymous">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/robotomedium.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/robotobold.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/roboto-regular.woff" type="font/woff" rel="preload">
-    <link href="fonts/robotomedium.woff" type="font/woff" rel="preload">
-    <link href="fonts/robotobold.woff" type="font/woff" rel="preload">
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <title>HTML Academy: Нёрдс</title>
@@ -96,8 +93,9 @@
           <a class="btn btn__pres" href="#">Заказать</a>
         </article>
       </section>
-      <hr>
+
       <section class="about-us">
+        <h5 class="visually-hidden">Что мы умеем</h5>
         <article class="about-us__details">
           <h3>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h3>
           <p>Исповедуем принцыпы минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -128,43 +126,49 @@
         </section>
       </section>
 
-      <hr>
-
       <section class="portfolio">
         <h5 class="visually-hidden">Our projects:</h5>
-        <a class="portfolio--htmla" href="#"></a>
-        <a class="portfolio--barber" href="#"></a>
-        <a class="portfolio--pink" href="#"></a>
-        <a class="portfolio--mishka" href="#"></a>
+        <a class="portfolio__item portfolio__item--htmla" href="#"></a>
+        <a class="portfolio__item portfolio__item--barber" href="#"></a>
+        <a class="portfolio__item portfolio__item--pink" href="#"></a>
+        <a class="portfolio__item portfolio__item--mishka" href="#"></a>
       </section>
-      <hr>
-      <div class="wrapper">
-        <section class="footer__map">
-          <div class="wrapper contacts-container">
-            <div class="footer__address">
-              <h6>Nёrds Design Studio</h6>
-              <p>191186, Санкт-Петербург,</p>
-              <p>ул Б. Конюшенная, д, 19/8</p>
-              <a>тел. +7 (812) 275-75-75</a>
-              <a class="btn" href="https://htmlacademy.ru/contacts">Напишите нам</a>
-            </div>
-          </div>
-          <img src="img/bg_map.png" alt="map" width="1440" height="416">
-        </section>
-      </div>
     </main>
 
     <footer class="footer container">
       <h2 class="visually-hidden">Подвал сайта: где мы и как с нами связаться</h2>
 
-      <ul class="footer__social">
-        <li><a href="https://vk.com/htmlacademy" target="_blank" aria-label="Наша страница вконтакте"><img src="img/vk-icon.svg" alt="Vkontakte"></a></li>
-        <li><a href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Наша страница в фейсбуке"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-        <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наша страница в инстаграмме"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
-      </ul>
-      <div class="footer__slogan">
-        <span>Давайте дружить, это выгодно!</span>
-        <span>Скидка 10% для друзей из социальных сетей.</span>
+      <section class="footer__map">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.286304334932!2d30.323040340197753!3d59.93806332403565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1424780846523" width="1440" height="416" style="border:0" allowfullscreen></iframe> -->
+        <!-- <div class="footer__map-responsive"> -->
+          <!-- <div style="overflow:hidden;width: 100%;position: relative;"><iframe width="100%" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Moscow%2C%20Russia+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/ru/">embedgooglemaps RU</a> & <a href="https://iamsterdamcard.it">iamsterdam card.it</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+        </div> -->
+        <div class="wrapper contacts-container">
+          <div class="footer__address">
+            <h6>Nёrds Design Studio</h6>
+            <p>191186, Санкт-Петербург,</p>
+            <p>ул Б. Конюшенная, д, 19/8</p>
+            <a>тел. +7 (812) 275-75-75</a>
+            <a class="btn" href="https://htmlacademy.ru/contacts">Напишите нам</a>
+          </div>
+        </div>
+        <!-- <img src="img/bg_map.png" alt="map" width="1440" height="416"> -->
+
+
+
+
+
+      </section>
+      <div class="wrapper">
+        <ul class="footer__social">
+          <li><a href="https://vk.com/htmlacademy" target="_blank" aria-label="Наша страница вконтакте"><img src="img/vk-icon.svg" alt="Vkontakte"></a></li>
+          <li><a href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Наша страница в фейсбуке"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наша страница в инстаграмме"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
+        </ul>
+        <div class="footer__slogan">
+          <b>Давайте дружить, это выгодно!</b>
+          <span>Скидка 10% для друзей из социальных сетей.</span>
+        </div>
       </div>
     </footer>
 
